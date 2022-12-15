@@ -14,18 +14,20 @@
 
 <div id="app">
 
-
-<header>
-    <div class="wall_header"></div>
-    <div class="wall"></div>
-</header>
+     <!-- BACKGROUND SECTION -->
+    <header class="position-relative">
+        <div class="wall_header"></div>
+        <div class="wall"></div>
+    </header>
 
 
 <main>
     
-    <div class="main_container">
+    <div class="main_container position-absolute">
 
-        <div class="chat_list">
+        <!--  CHAT USERS LIST -->
+        <div class="chat_list position-absolute">
+            <!-- USER SECTION -->
             <div class="user_head d-flex justify-content-between align-items-center px-2">
                 <div class="users_image d-flex align-items-center">
                     <img src="./img/avatar_io.jpg" alt="">
@@ -33,13 +35,14 @@
                 </div>
                 
                 <div class="user_icons">
-                    <a class="link_icon" href=""> <i class="fa-solid fa-circle-notch"></i></a>
-                    <a class="link_icon" href=""><i class="fa-solid fa-message"></i></a>
-                    <a class="link_icon" href=""> <i class="fa-solid fa-ellipsis-vertical"></i></a>
+                    <a class="link_icon p_5" href=""> <i class="fa-solid fa-circle-notch"></i></a>
+                    <a class="link_icon p_5" href=""><i class="fa-solid fa-message"></i></a>
+                    <a class="link_icon p_5" href=""> <i class="fa-solid fa-ellipsis-vertical"></i></a>
                 </div>
 
             </div>
 
+            <!-- NOTIFICATIONS SECTION -->
             <div class="notifications_banner d-flex justify-content-between align-items-center px-2">
                 <div class="notifications_image d-flex">
                     <span><i class="fa-solid fa-bell-slash notifications_icon"></i></span>
@@ -48,13 +51,24 @@
                         <a class="fw-light fs-small px-2 text-secondary">Attiva le notifiche desktop</a>
                     </div>
                 </div>
-                
-                <div class="user_icons">
-                    
-                </div>
-
             </div>
 
+            <!-- SEARCH SECTION -->
+            <div class="search_container d-flex justify-content-between align-items-center px-2">
+                <div class="search_items position-relative w-100">
+
+
+                    <div class="search_icon position-absolute">
+                        <a class="link_icon" href=""><i class="fa-solid fa-magnifying-glass"></i></i></a>
+                        <span class="fw-light fs-small text-secondary px-2">Cerca o inizia una nuova chat</span>
+                    </div>
+                    
+
+                    <div class="search_input form-group">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+            </div>
 
 
 
@@ -62,21 +76,22 @@
 
         </div>
 
-
-        <div class="chat_view">
+        <!--  SINGLE CHAT USER VIEW  -->
+        <div class="chat_view position-absolute">
             <div class="client_head d-flex justify-content-between align-items-center px-2">
                 <div class="users_image d-flex align-items-center">
                     <img src="./img/avatar_1.jpg" alt="">
                 </div>
+
                 <div class="client_name d-flex flex-column flex-grow-1">
                     <span class="fs-small px-2">Michele</span>
-                    <span class="fw-light fs-small px-2 text-secondary">Ultimo accesso oggi alle 12:00</span>
+                    <span class="fw-light fs-xxsmall px-2 text-secondary">Ultimo accesso oggi alle 12:00</span>
                 </div>
                 
                 <div class="client_icons">
-                    <a class="link_icon" href=""><i class="fa-solid fa-magnifying-glass"></i></i></a>
-                    <a class="link_icon" href=""><i class="fa-solid fa-paperclip"></i></a>
-                    <a class="link_icon" href=""> <i class="fa-solid fa-ellipsis-vertical"></i></a>
+                    <a class="link_icon p_5" href=""><i class="fa-solid fa-magnifying-glass"></i></i></a>
+                    <a class="link_icon p_5" href=""><i class="fa-solid fa-paperclip"></i></a>
+                    <a class="link_icon p_5" href=""> <i class="fa-solid fa-ellipsis-vertical"></i></a>
                 </div>
 
             </div>

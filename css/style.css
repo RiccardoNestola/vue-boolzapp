@@ -3,12 +3,16 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
-header{
-    position: relative;
-}
-
 .fs-small{
     font-size: small;
+}
+
+.fs-xxsmall{
+    font-size: xx-small;
+}
+
+.p_5{
+    padding: .5rem;
 }
 
 .wall_header {
@@ -27,7 +31,6 @@ header{
     width: 80vw;
     height: 700px;
     background-color: white;
-    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -70%);
@@ -37,7 +40,6 @@ header{
     width: 30%;
     height: 900px;
     background-color: white;
-    position: absolute;
     top: 0;
     left: 0;   
 }
@@ -49,7 +51,6 @@ header{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: absolute;
     top: 0;
     right: 0;
     border-left: 1px solid lightgray;
@@ -73,12 +74,10 @@ header{
 }
 
 .link_icon{
-    padding: .5rem;
     color: #B1B1B1;
 }
 
 .link_icon:hover{
-    padding: .5rem;
     color: #009688;
 }
 
@@ -99,4 +98,26 @@ header{
     height: 8vh;
     background-color: #8EDAFC;
 
+}
+
+.search_container{
+    width: 100%;
+    height: 60px;
+    background-color: #FAFAFA;
+    padding: 1rem;
+
+}
+
+.search_items{
+    top:0;
+    left: 0;
+}
+
+.search_icon{
+    top: 8px;
+    left: 10px;
+
+}
+.form-control{
+    border: 1px solid transparent;
 }
