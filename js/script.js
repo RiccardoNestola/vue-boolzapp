@@ -4,6 +4,7 @@ const { createApp } = Vue
         data() {
         return {
             
+            
         }
     },
         methods: {
