@@ -41,4 +41,16 @@ header{
     position: absolute;
     top: 0;
     right: 0;
+    border-left: 1px solid lightgray;
+}
+
+.user_head, .client_head{
+    width: 100%;
+    height: 5vh;
+    background-color: #EAEAEA;
+}
+
+.link_icon{
+    padding: .5rem;
+    color: #B1B1B1;
 }
