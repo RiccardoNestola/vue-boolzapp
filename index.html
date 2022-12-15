@@ -67,17 +67,17 @@
             </div>
 
             <!--  SINGLE LOOP USER SECTION  -->
-            <div class="single_user d-flex justify-content-between align-items-center px-2">
+            <div class="single_user d-flex justify-content-between align-items-center px-2" v-for="element in contacts">
                 <div class="users_image d-flex align-items-center">
-                    <img src="./img/avatar_1.jpg" alt="">
+                    <img :src="`./img/avatar${element.avatar}.jpg `" alt="avatar img">
                 </div>
 
-                <div class="client_name d-flex flex-column flex-grow-1">
-                    <span class="fs-small px-2">Michele</span>
-                    <span class="fw-light fs-xxsmall px-2 text-secondary">Ultimo messaggio ricevuto</span>
+                <div class="single_name d-flex flex-column flex-grow-1">
+                    <span class="fs-small px-2">{{element.name}}</span>
+                    <span class="fw-light fs-xxsmall px-2 text-secondary">{{element.message}}</span>
                 </div>
                 
-                <div class="client_icons">
+                <div class="single_date">
                     <span class="fw-light fs-xxsmall px-2 text-secondary">12:00</span>
                 </div>
 
