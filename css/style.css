@@ -7,6 +7,10 @@ header{
     position: relative;
 }
 
+.fs-small{
+    font-size: small;
+}
+
 .wall_header {
     width: 100%;
     height: 10vh;
@@ -31,8 +35,8 @@ header{
 
 .chat_list{
     width: 30%;
-    height: 700px;
-    background-color: beige;
+    height: 900px;
+    background-color: white;
     position: absolute;
     top: 0;
     left: 0;   
@@ -40,8 +44,11 @@ header{
 
 .chat_view{
     width: 70%;
-    height: 700px;
-    background-color: burlywood;
+    height: 900px;
+    background-image: url(../img/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: absolute;
     top: 0;
     right: 0;
@@ -73,6 +80,17 @@ header{
 .link_icon:hover{
     padding: .5rem;
     color: #009688;
+}
+
+
+.notifications_icon{
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #8EDAFC;
+    padding: 0.7rem;
+    text-align: center;
 }
 
 
