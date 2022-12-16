@@ -47,7 +47,7 @@
                 <div class="notifications_image d-flex">
                     <span><i class="fa-solid fa-bell-slash notifications_icon"></i></span>
                     <div class="notifications_message d-flex flex-column">
-                        <span class="px-2 fs_small">Ricevi notifihce di nuovi messaggi </span>
+                        <span class="px-2 fs_small">Ricevi notifiche di nuovi messaggi </span>
                         <a class="fw-light fs_small px-2 text-secondary">Attiva le notifiche desktop</a>
                     </div>
                 </div>
@@ -58,10 +58,10 @@
                 <div class="search_items position-relative w-100">
                     <div class="search_icon position-absolute">
                         <a class="link_icon" href=""><i class="fa-solid fa-magnifying-glass"></i></i></a>
-                        <span class="fw-light fs_small text-secondary px-2">Cerca o inizia una nuova chat</span>
+                        <!-- <span class="fw-light fs_small text-secondary px-2">Cerca o inizia una nuova chat</span> -->
                     </div>
                     <div class="search_input form-group">
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control fw-light fs_small text-secondary px-2"  placeholder="       Cerca o inizia una nuova chat">
                     </div>
                 </div>
             </div>
@@ -110,11 +110,11 @@
             </div>
 
 
-
+            <!--  MESSAGES   -->
             <div class="messages_container">
 
-                <div class="message message_sent">
-                    <span>ciao inviato</span>
+                <div class="message message_sent" v-for="(element, index) in contacts[userIndex].messages">
+                    <span>{{element.message}}</span>
                 </div>
             
 
@@ -122,6 +122,24 @@
                     <span>ciao ricevuto</span>
                 </div>
                 
+            </div>
+
+            <!--  INPUT SECTION   -->
+            <div class="input_section d-flex justify-content-between align-items-center px-2 position-relative">
+                <div class=" d-flex align-items-center">
+                    <a class="link_icon p_5" href=""><i class="fa-regular fa-face-smile"></i></i></a>
+                </div>
+
+                <div class="input_text d-flex flex-column flex-grow-1">
+                    <div class="search_input form-group">
+                        <input type="text" class="form-control" placeholder="Scrivi un messaggio">
+                    </div>
+                </div>
+                
+                <div class="client_icons">
+                    <a class="link_icon p_5" href=""><i class="fa-solid fa-microphone"></i></i></a>
+                </div>
+
             </div>
 
         </div>
