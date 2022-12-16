@@ -130,6 +130,9 @@ body {
     border-top: .5px solid lightgray;
 }
 
+.single_user:hover{
+    background-color: lightgrey;
+}
 
 .messages_container{
     padding: 1.5rem 2rem;

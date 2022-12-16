@@ -172,7 +172,9 @@ const { createApp } = Vue
         }
     },
         methods: {
-            
+            clickToChat(index){
+                this.userIndex = index;
+            },
         }
 
     }).mount('#app')
