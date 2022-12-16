@@ -113,14 +113,14 @@
             <!--  MESSAGES   -->
             <div class="messages_container">
 
-                <div class="message message_sent" v-for="(element, index) in contacts[userIndex].messages">
-                    <span>{{element.message}}</span>
+                <div class="message" v-for="(message, index) in contacts[userIndex].messages" :class="(message.status==='sent') ? 'sent align-self-end' : 'received'">
+                    <span>{{message.message}}</span>
                 </div>
             
 
-                <div class="message message_received">
+                <!-- <div class="message received">
                     <span>ciao ricevuto</span>
-                </div>
+                </div> -->
                 
             </div>
 

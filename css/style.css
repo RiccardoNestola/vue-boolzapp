@@ -145,13 +145,13 @@ body {
     margin: 10px 0;
 }
 
-.message_sent{
+.sent{
     background-color: #D5F9BA;
     clear: both;
     float: right;
 }
 
-.message_received{
+.received{
     background-color: white;
     clear: both;
     float: left;
