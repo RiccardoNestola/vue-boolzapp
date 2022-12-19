@@ -26,11 +26,16 @@ body {
 
 .main_container{
     width: 80vw;
-    /* height: 700px; */
     background-color: white;
     top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+
+.chat_container{
+    overflow: auto;
+    height: 500px;
 }
 
 .chat_list{
@@ -39,7 +44,6 @@ body {
     background-color: white;
     top: 0;
     left: 0;
-    overflow: auto; 
 }
 
 .chat_view{
@@ -108,12 +112,13 @@ body {
 
 .search_items{
     top:0;
-    left: 0;
+    left: 30px;
+    width: 90%;
 }
 
 .search_icon{
-    top: 8px;
-    left: 10px;
+    top: 6px;
+    left: -27px;
 
 }
 .form-control{

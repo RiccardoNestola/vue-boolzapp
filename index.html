@@ -49,13 +49,12 @@
 
             <!-- SEARCH SECTION -->
             <div class="search_container d-flex justify-content-between align-items-center px-2">
-                <div class="search_items position-relative w-100">
+                <div class="search_items position-relative">
                     <div class="search_icon position-absolute">
                         <a class="link_icon" href=""><i class="fa-solid fa-magnifying-glass"></i></i></a>
-                        <!-- <span class="fw-light fs_small text-secondary px-2">Cerca o inizia una nuova chat</span> -->
                     </div>
                     <div class="search_input form-group">
-                        <input type="text" class="form-control fw-light fs_small text-secondary px-2"  placeholder="       Cerca o inizia una nuova chat">
+                        <input v-model.trim="#" type="text" class="form-control fw-light fs_small text-secondary px-2"  placeholder="Cerca o inizia una nuova chat">
                     </div>
                 </div>
             </div>
@@ -87,11 +86,11 @@
         <div class="chat_view position-absolute">
             <div class="client_head d-flex justify-content-between align-items-center px-2">
                 <div class="users_image d-flex align-items-center">
-                    <img src="./img/avatar_1.jpg" alt="">
+                    <img :src="`./img/avatar${contacts[userIndex].avatar}.jpg`" alt="">
                 </div>
 
                 <div class="client_name d-flex flex-column flex-grow-1">
-                    <span class="fs_small px-2">Michele</span>
+                    <span class="fs_small px-2">{{contacts[userIndex].name}}</span>
                     <span class="fw-light fs_xxsmall px-2 text-secondary">Ultimo accesso oggi alle 12:00</span>
                 </div>
                 
