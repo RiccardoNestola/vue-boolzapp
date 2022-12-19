@@ -178,7 +178,7 @@ const { createApp } = Vue
             },
 
             newMessage(msg) {
-                if (!this.contacts.includes(msg)) {
+                if (msg != "" && (!this.contacts.includes(msg))) {
                     this.myMsg = ""
                     this.contacts[this.userIndex].messages.push({ message : msg, status : `sent`});
                     setTimeout(() => {
