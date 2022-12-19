@@ -4,6 +4,7 @@ const { createApp } = Vue
         data() {
         return {
             userIndex: 0,
+            myMsg: "",
             contacts: [
                 {
                     name: 'Michele',
@@ -174,6 +175,14 @@ const { createApp } = Vue
         methods: {
             clickToChat(index){
                 this.userIndex = index;
+            },
+
+            newMessage(msg) {
+                if (!this.contacts.includes(msg)) {
+                    this.myMsg = ""
+                    this.contacts[this.userIndex].messages.push({ message : msg, status : `sent`});
+                    
+                }
             },
         }
 

@@ -14,7 +14,7 @@
 
 <div id="app">
 
-     <!-- BACKGROUND SECTION -->
+    <!-- BACKGROUND SECTION -->
     <header class="position-relative">
         <div class="wall_header"></div>
         <div class="wall"></div>
@@ -110,11 +110,12 @@
             </div>
 
 
-            <!--  MESSAGES   -->
+            <!--  MESSAGES CHAT -->
             <div class="messages_container">
 
                 <div class="message" v-for="(message, index) in contacts[userIndex].messages" :class="(message.status==='sent') ? 'sent' : 'received'">
                     <span>{{message.message}}</span>
+                    <span class="d-block fw-light fs_small text-secondary px-2">{{message.date}}</span>
                 </div>
                 
             </div>
@@ -127,7 +128,7 @@
 
                 <div class="input_text d-flex flex-column flex-grow-1">
                     <div class="search_input form-group">
-                        <input type="text" class="form-control fw-light fs_small text-secondary px-2" placeholder="Scrivi un messaggio">
+                        <input v-model.trim="myMsg" type="text" class="form-control fw-light fs_small text-secondary px-2" placeholder="Scrivi un messaggio" @keyup.enter="newMessage(myMsg)">
                     </div>
                 </div>
                 
