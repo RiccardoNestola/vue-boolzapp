@@ -5,6 +5,7 @@ const { createApp } = Vue
         return {
             userIndex: 0,
             myMsg: "",
+            mySearch:"",
             contacts: [
                 {
                     name: 'Michele',
@@ -187,7 +188,17 @@ const { createApp } = Vue
                     
                 }
             },
-            
+
+            nameSearch(mySearch){
+                this.contacts.forEach(contact => {
+                    if(contact.name.toLowerCase().includes(mySearch)){
+                        contact.visible = true
+                    } else {
+                        contact.visible = false
+                    }
+                });
+            }
+
         }
 
     }).mount('#app')
