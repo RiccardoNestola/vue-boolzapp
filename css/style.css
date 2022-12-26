@@ -11,6 +11,7 @@ body {
     height: 100vh;
 }
 
+
 .fs_small{
     font-size: small;
 }
@@ -33,8 +34,8 @@ body {
 }
 
 
-.chat_container{
-    overflow: auto;
+.wrapper{
+    overflow: scroll;
     height: 500px;
 }
 
@@ -60,7 +61,7 @@ body {
 
 .user_head, .client_head,.input_section{
     width: 100%;
-    height: 5vh;
+    height: 48px;
     background-color: #EAEAEA;
 }
 
@@ -97,7 +98,7 @@ body {
 
 .notifications_banner{
     width: 100%;
-    height: 8vh;
+    height: 80px;
     background-color: #8EDAFC;
 
 }
@@ -139,7 +140,7 @@ body {
 .messages_container{
     padding: 1.5rem 2rem;
     overflow-y: scroll;
-    height: calc(100% - 10vh);
+    height: calc(100% - 96px);
 }
 
 

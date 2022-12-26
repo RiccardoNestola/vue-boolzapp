@@ -54,29 +54,31 @@
                         <a class="link_icon" href=""><i class="fa-solid fa-magnifying-glass"></i></i></a>
                     </div>
                     <div class="search_input form-group">
-                        <input v-model="mySearch" type="text" class="form-control fw-light fs_small text-secondary px-2"  placeholder="Cerca o inizia una nuova chat" @keyup="nameSarch(mySearch)">
+                        <input v-model="mySearch" type="text" class="form-control fw-light fs_small text-secondary px-2"  placeholder="Cerca o inizia una nuova chat" @keyup="nameSearch(mySearch)">
                     </div>
                 </div>
             </div>
 
             <!--  SINGLE LOOP USER SECTION  -->
-        <div class="chat_container">
-            <div class="single_user d-flex justify-content-between align-items-center px-2" v-for="(element, index) in contacts" @click="clickToChat(index)" v-show="element.visible" >
-                <div class="users_image d-flex align-items-center">
-                    <img :src="`./img/avatar${element.avatar}.jpg `" alt="avatar img">
-                </div>
+            <div class="wrapper">
+                <div class="chat_container" v-for="(element, index) in contacts" @click="clickToChat(index)" v-show="element.visible">
+                    <div class="single_user d-flex justify-content-between align-items-center px-2"  >
+                        <div class="users_image d-flex align-items-center">
+                            <img :src="`./img/avatar${element.avatar}.jpg `" alt="avatar img">
+                        </div>
 
-                <div class="single_name d-flex flex-column flex-grow-1">
-                    <span class="fs_small px-2">{{element.name}}</span>
-                    <span class="fw-light fs_xxsmall px-2 text-secondary">Ultimo messaggio inviato</span>
-                </div>
-                
-                <div class="single_date">
-                    <span class="fw-light fs_xxsmall px-2 text-secondary">12:00</span>
-                </div>
+                        <div class="single_name d-flex flex-column flex-grow-1">
+                            <span class="fs_small px-2">{{element.name}}</span>
+                            <span class="fw-light fs_xxsmall px-2 text-secondary">Ultimo messaggio inviato</span>
+                        </div>
+                        
+                        <div class="single_date">
+                            <span class="fw-light fs_xxsmall px-2 text-secondary">12:00</span>
+                        </div>
 
+                    </div>
+                </div>
             </div>
-        </div>
 
 
 
