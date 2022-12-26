@@ -65,6 +65,18 @@ body {
     background-color: #EAEAEA;
 }
 
+
+.users_image_profile {
+    width: 30px;
+    height: auto;
+}
+
+.users_image_profile img {
+    width: 30px;
+    height: auto;
+    border-radius: 50px;
+}
+
 .users_image {
     width: 30px;
     height: auto;
